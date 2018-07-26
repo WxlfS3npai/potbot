@@ -1,1 +1,1 @@
-worker: python potbot.py
+worker: python pottbot.py
