@@ -61,7 +61,7 @@ async def help(ctx):
     )
 
     embed.add_field(name="my mod commands", value="warn@someone <reason> - will warn user\naddrole@someone <rolename>\nmute@someone - mutes the user\nunmute - unmute the user\nkick@someone - kicks the user\nreport@someone <reason> - reports the user" , inline=False)
-    await client.send_message(embed=embed)
+    await client.send_message(author, embed=embed)
     
 @client.command(pass_context=True)
 async def mute(ctx, member: discord.Member):
